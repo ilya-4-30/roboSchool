@@ -1,0 +1,16 @@
+:root {
+  --color-light: #ffffff;
+  --color-dark: #141024;
+  --color-dark-rgba: rgba(20, 16, 36, 0.6);
+  --color-accent: #D52027;
+
+  --gap: 40px;
+  --second-gap: 20px;
+
+  --transition-time: 0.4s;
+
+  --button-padding: 25px 54px;
+  --button-radius: 5px;
+
+  --card-radius: 20px;
+}

@@ -1,0 +1,43 @@
+.pack__list {
+  display: flex;
+  gap: var(--second-gap);
+  justify-content: space-between;
+}
+
+.pack__item {
+  padding: var(--gap);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap);
+  border: 1px solid var(--color-dark-rgba);
+  border-radius: var(--card-radius);
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.pack__item-title {
+  font-weight: 600;
+  font-size: 1.875rem;
+}
+
+.pack__item-price {
+  font-weight: 600;
+  font-size: 3.125rem;
+}
+
+.pack__item-text {
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+@media(max-width: 320px) {
+  .pack__list {
+    flex-direction: column;
+  }
+
+  .pack__item {
+    padding: var(--second-gap);
+  }
+}

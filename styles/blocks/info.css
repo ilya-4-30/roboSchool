@@ -1,0 +1,38 @@
+.info__text {
+  margin-bottom: var(--gap);
+  max-width: 870px;
+  font-size: clamp(1.25rem, 5vw, 1.875rem);
+}
+
+.info__text-bold {
+  font-weight: 700;
+}
+
+.info__counters {
+  display: flex;
+  gap: var(--gap);
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.info__counters-card {
+  max-width: 260px;
+}
+
+.info__count {
+  font-weight: 600;
+  font-size: clamp(3.75rem, 5vw, 4.375rem);
+  color: var(--color-accent);
+}
+
+.info__count-text {
+  font-size: clamp(1rem, 5vw, 1.125rem);
+  color: var(--color-dark-rgba);
+}
+
+@media(max-width: 320px) {
+  .info__counters-card {
+    max-width: 100%;
+    text-align: center;
+  }
+}

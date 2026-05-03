@@ -1,0 +1,47 @@
+.trainers__list {
+  display: flex;
+  gap: var(--second-gap);
+  justify-content: space-between;
+}
+
+.trainers__item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--second-gap);
+}
+
+.trainers__item-img {
+  border-radius: var(--card-radius);
+}
+
+.trainers__item-title {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.trainers__item-text {
+  font-size: 1.125rem;
+  color: var(--color-dark-rgba);
+}
+
+.trainers__item-link {
+  width: fit-content;
+  font-size: 1.125rem;
+  color: var(--color-accent);
+  transition: var(--transition-time);
+}
+
+.trainers__item-link:hover {
+  text-decoration: underline;
+}
+
+@media(max-width: 320px) {
+  .trainers__list {
+    flex-direction: column;
+  }
+
+  .trainers__item {
+    text-align: center;
+    align-items: center;
+  }
+}
