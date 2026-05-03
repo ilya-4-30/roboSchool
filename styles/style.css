@@ -10,9 +10,3 @@
 @import '../styles/blocks/pack.css';
 @import '../styles/blocks/discont.css';
 @import '../styles/blocks/footer.css';
-
-@media (max-width: 9999px) {
-    body {
-        background-color: red !important;
-    }
-}
