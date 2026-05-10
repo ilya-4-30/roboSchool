@@ -50,17 +50,3 @@
   color: var(--color-accent);
   background-color: var(--color-light);
 }
-
-@media(max-width: 320px) {
-  .discont {
-    padding-block: var(--gap);
-  }
-
-  .discont__inner {
-    flex-direction: column;
-  }
-
-  .discont__info {
-    text-align: center;
-  }
-}

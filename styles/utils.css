@@ -5,6 +5,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -45,13 +46,6 @@ body {
   font-size: clamp(1.875rem, 5vw, 3.125rem);
 }
 
-@media(max-width: 320px) {
-  .main {
-    padding-top: var(--gap);
-    gap: calc(var(--gap) * 1.5);
-  }
-
-  .section-title {
-    text-align: center;
-  }
+.burger {
+  display: none;
 }

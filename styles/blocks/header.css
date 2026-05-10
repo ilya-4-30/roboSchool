@@ -68,28 +68,6 @@
 }
 
 .hero__text {
-  max-width: 480px;
+  max-width: 300px;
   font-size: clamp(1rem, 5vw, 1.25rem);
-}
-
-@media(max-width: 320px) {
-  .menu {
-    flex-direction: column;
-    gap: var(--second-gap);
-  }
-  
-  .menu__nav {
-    display: none;
-  }
-  
-  .hero {
-    justify-content: flex-start;
-    align-items: center;
-    background-size: 80%;
-    background-position: center bottom;
-  }
-
-  .hero__text {
-    text-align: center;
-  }
 }

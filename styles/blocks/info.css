@@ -9,10 +9,9 @@
 }
 
 .info__counters {
-  display: flex;
+  display: grid;
   gap: var(--gap);
-  flex-wrap: wrap;
-  justify-content: space-between;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .info__counters-card {
@@ -28,11 +27,4 @@
 .info__count-text {
   font-size: clamp(1rem, 5vw, 1.125rem);
   color: var(--color-dark-rgba);
-}
-
-@media(max-width: 320px) {
-  .info__counters-card {
-    max-width: 100%;
-    text-align: center;
-  }
 }

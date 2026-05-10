@@ -31,13 +31,3 @@
   font-size: 1.125rem;
   text-align: center;
 }
-
-@media(max-width: 320px) {
-  .pack__list {
-    flex-direction: column;
-  }
-
-  .pack__item {
-    padding: var(--second-gap);
-  }
-}

@@ -25,14 +25,3 @@
 .footer__rights {
   color: rgba(255, 255, 255, 0.6);
 }
-
-@media(max-width: 320px) {
-  .footer__inner {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer__info {
-    text-align: center;
-  }
-}

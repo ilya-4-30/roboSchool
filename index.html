@@ -26,6 +26,12 @@
             </ul>
           </nav>
           <a href="tel:+78000001122" class="menu__tel">+7 800 000 11 22</a>
+          <div class="burger">
+            <span class="burger__item"></span>
+            <span class="burger__item"></span>
+            <span class="burger__item"></span>
+          </div>
+          <div class="overlay"></div>
         </section>
         <section class="hero">
           <h1 class="hero__title">ROBO SCHOOL</h1>
@@ -94,19 +100,34 @@
           <h2 class="trainers__title section-title">Профессиональные тренеры</h2>
           <ul class="trainers__list">
             <li class="trainers__item">
-              <img src="./images/trainers/irina-lime.jpg" alt="" class="trainers__item-img" />
+              <img
+                src="./images/trainers/irina-lime.jpg"
+                srcset="./images/trainers/irina-lime.jpg 360w, ./images/trainers/irina-lime-0.5.jpg 180w"
+                sizes="(max-width:576px) 230px, 360px"
+                alt=""
+                class="trainers__item-img" />
               <h3 class="trainers__item-title">Ирина Лайм</h3>
               <p class="trainers__item-text">преподаватель по робототехнике</p>
               <a href="#" class="trainers__item-link">Подробнее</a>
             </li>
             <li class="trainers__item">
-              <img src="./images/trainers/marina-orlova.jpg" alt="" class="trainers__item-img" />
+              <img
+                src="./images/trainers/marina-orlova.jpg"
+                srcset="./images/trainers/marina-orlova.jpg 360w, ./images/trainers/marina-orlova-0.5.jpg 180w"
+                sizes="(max-width:576px) 230px, 360px"
+                alt=""
+                class="trainers__item-img" />
               <h3 class="trainers__item-title">Марина Орлова</h3>
               <p class="trainers__item-text">преподаватель по робототехнике</p>
               <a href="#" class="trainers__item-link">Подробнее</a>
             </li>
             <li class="trainers__item">
-              <img src="./images/trainers/maksim-petrov.jpg" alt="" class="trainers__item-img" />
+              <img
+                src="./images/trainers/maksim-petrov.jpg"
+                srcset="./images/trainers/maksim-petrov.jpg 360w, ./images/trainers/maksim-petrov-0.5.jpg 180w"
+                sizes="(max-width:576px) 230px, 360px"
+                alt=""
+                class="trainers__item-img" />
               <h3 class="trainers__item-title">Максим Петров</h3>
               <p class="trainers__item-text">преподаватель по программированию</p>
               <a href="#" class="trainers__item-link">Подробнее</a>
@@ -163,5 +184,6 @@
         <a href="tel:+78000001122" class="footer__tel">+7 800 000 11 22</a>
       </div>
     </footer>
+    <script src="/script.js"></script>
   </body>
 </html>

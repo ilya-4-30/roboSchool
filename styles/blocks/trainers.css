@@ -5,9 +5,12 @@
 }
 
 .trainers__item {
+  padding: var(--second-gap);
   display: flex;
   flex-direction: column;
   gap: var(--second-gap);
+  box-shadow: 0px 0px 5px 5px #f0eeee;
+  border-radius: var(--card-radius);
 }
 
 .trainers__item-img {
@@ -33,15 +36,4 @@
 
 .trainers__item-link:hover {
   text-decoration: underline;
-}
-
-@media(max-width: 320px) {
-  .trainers__list {
-    flex-direction: column;
-  }
-
-  .trainers__item {
-    text-align: center;
-    align-items: center;
-  }
 }

@@ -43,9 +43,3 @@
 .result__item-icon:hover + .result__item-hover {
   visibility: visible;
 }
-
-@media(max-width: 320px) {
-  .result__item {
-    text-align: center;
-  }
-}
