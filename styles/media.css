@@ -235,3 +235,14 @@
     text-align: center;
   }
 }
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 1s;
+}
+
+.animation-on-scroll {
+  opacity: 1;
+  transform: translateY(0);
+}
