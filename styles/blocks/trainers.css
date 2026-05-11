@@ -1,7 +1,9 @@
 .trainers__list {
+  padding: 5px;
   display: flex;
   gap: var(--second-gap);
   justify-content: space-between;
+  overflow-y: hidden;
 }
 
 .trainers__item {

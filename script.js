@@ -26,7 +26,7 @@ const observer = new IntersectionObserver((entries) => {
           || entry.target.classList.contains('result__list')
           || entry.target.classList.contains('trainers__list')
           || entry.target.classList.contains('pack__list')) {
-
+            
             const cards = entry.target.querySelectorAll('.info__counters-card,.result__item, .trainers__item, .pack__item');
 
             cards.forEach((card, index) => {
@@ -41,6 +41,38 @@ const observer = new IntersectionObserver((entries) => {
         observer.unobserve(entry.target);
       }
     });
-}, { threshold: 1 });
+}, { threshold: 0.6 });
 
 document.querySelectorAll('.fade-up, .info__counters, .result__list, .trainers__list, .pack__list').forEach(el => observer.observe(el));
+
+// Счетчик
+document.addEventListener('DOMContentLoaded', () => {
+  function animateCounter(element, target) {
+    let current = 0;
+    const increment = target / 70;
+    const timer = setInterval(() => {
+      current += increment;
+      if (current >= target) {
+        element.textContent = target;
+        clearInterval(timer);
+      } else {
+        element.textContent = Math.floor(current);
+      }
+    }, 40); 
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const counterElement = entry.target;
+        const target = parseInt(counterElement.dataset.target);
+        animateCounter(counterElement, target);
+        observer.unobserve(counterElement);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  document.querySelectorAll('.info__count').forEach(counter => {
+    observer.observe(counter);
+  });
+});
