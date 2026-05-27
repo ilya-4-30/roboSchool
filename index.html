@@ -167,10 +167,11 @@
             <p class="discont__text fade-up">Акция действительна до 10 марта 2022 года</p>
           </div>
           <form class="form discont__form">
-            <input required type="text" class="form__input fade-up" placeholder="Имя" />
-            <input required type="tel" class="form__input fade-up" placeholder="Телефон" />
-            <input required type="email" class="form__input fade-up" placeholder="E-mail" />
+            <input type="text" class="form__input fade-up" placeholder="Имя" id="formName" />
+            <input type="tel" class="form__input fade-up" placeholder="+375(хх)ххх-хх-хх" id="formPhone" />
+            <input type="email" class="form__input fade-up" placeholder="E-mail" id="formEmail" />
             <button class="form__button fade-up" type="submit">Оформить заявку</button>
+            <span class="form__error" id="error"></span>
           </form>
         </div>
       </section>
@@ -184,6 +185,7 @@
         <a href="tel:+78000001122" class="footer__tel">+7 800 000 11 22</a>
       </div>
     </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

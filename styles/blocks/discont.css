@@ -22,7 +22,9 @@
 }
 
 .form {
+  padding-bottom: var(--gap);
   width: clamp(290px, 30vw, 500px);
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: var(--second-gap);
@@ -49,4 +51,29 @@
 .form__button:hover {
   color: var(--color-accent);
   background-color: var(--color-light);
+}
+
+.form__button:disabled {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  cursor: not-allowed;
+}
+
+.form__error {
+  padding: var(--second-gap);
+  width: 100%;
+  position: absolute;
+  bottom: -40px;
+  background-color: var(--color-light);
+  border-radius: var(--button-radius);
+  color: var(--color-accent);
+  visibility: hidden;
+  font-size: 14px;
+  transform: scale(10%);
+  transition: var(--transition-time);
+}
+
+.form__error--visible {
+  visibility: visible;
+  transform: scale(100%);
 }
