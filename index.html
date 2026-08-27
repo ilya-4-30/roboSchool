@@ -3,8 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta title="Курсы по робототехнике Robo School" />
+    <meta
+      name="description"
+      content="Курсы повышения квалификации по робототехнике для педагогов начальной школы. Профессиональные тренеры. Запишитесь онлайн." />
+    <meta name="robots" content="index, follow" />
     <title>Robo School</title>
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/utils.css">
+
+    <link rel="stylesheet" href="./styles/blocks/header.css">
+    <link rel="stylesheet" href="./styles/blocks/info.css">
+    <link rel="stylesheet" href="./styles/blocks/result.css">
+    <link rel="stylesheet" href="./styles/blocks/trainers.css">
+    <link rel="stylesheet" href="./styles/blocks/pack.css">
+    <link rel="stylesheet" href="./styles/blocks/discont.css">
+    <link rel="stylesheet" href="./styles/blocks/footer.css">
+    <link rel="stylesheet" href="./styles/blocks/cookie.css" />
+
     <link rel="shortcut icon" href="./images/icons/favicon.ico" type="image/x-icon" />
   </head>
   <body>
@@ -101,33 +119,36 @@
           <ul class="trainers__list">
             <li class="trainers__item fade-up">
               <img
-                src="./images/trainers/irina-lime.jpg"
-                srcset="./images/trainers/irina-lime.jpg 360w, ./images/trainers/irina-lime-0.5.jpg 180w"
+                src="./images/trainers/irina-lime.webp"
+                srcset="./images/trainers/irina-lime.webp 360w, ./images/trainers/irina-lime-0.5.webp 180w"
                 sizes="(max-width:576px) 230px, 360px"
                 alt=""
-                class="trainers__item-img" />
+                class="trainers__item-img"
+                loading="lazy" />
               <h3 class="trainers__item-title">Ирина Лайм</h3>
               <p class="trainers__item-text">преподаватель по робототехнике</p>
               <a href="#" class="trainers__item-link">Подробнее</a>
             </li>
             <li class="trainers__item fade-up">
               <img
-                src="./images/trainers/marina-orlova.jpg"
-                srcset="./images/trainers/marina-orlova.jpg 360w, ./images/trainers/marina-orlova-0.5.jpg 180w"
+                src="./images/trainers/marina-orlova.webp"
+                srcset="./images/trainers/marina-orlova.webp 360w, ./images/trainers/marina-orlova-0.5.webp 180w"
                 sizes="(max-width:576px) 230px, 360px"
                 alt=""
-                class="trainers__item-img" />
+                class="trainers__item-img"
+                loading="lazy" />
               <h3 class="trainers__item-title">Марина Орлова</h3>
               <p class="trainers__item-text">преподаватель по робототехнике</p>
               <a href="#" class="trainers__item-link">Подробнее</a>
             </li>
             <li class="trainers__item fade-up">
               <img
-                src="./images/trainers/maksim-petrov.jpg"
-                srcset="./images/trainers/maksim-petrov.jpg 360w, ./images/trainers/maksim-petrov-0.5.jpg 180w"
+                src="./images/trainers/maksim-petrov.webp"
+                srcset="./images/trainers/maksim-petrov.webp 360w, ./images/trainers/maksim-petrov-0.5.webp 180w"
                 sizes="(max-width:576px) 230px, 360px"
                 alt=""
-                class="trainers__item-img" />
+                class="trainers__item-img"
+                loading="lazy" />
               <h3 class="trainers__item-title">Максим Петров</h3>
               <p class="trainers__item-text">преподаватель по программированию</p>
               <a href="#" class="trainers__item-link">Подробнее</a>
@@ -185,7 +206,23 @@
         <a href="tel:+78000001122" class="footer__tel">+7 800 000 11 22</a>
       </div>
     </footer>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script src="script.js"></script>
+    <section class="cookie hidden">
+      <div class="cookie__content">
+        <p class="cookie__text">
+          Мы используем файлы cookie для улучшения работы сайта, анализа трафика и персонализации контента. Продолжая
+          использовать наш сайт, вы соглашаетесь с нашей Политикой конфиденциальности.
+        </p>
+        <div class="cookie__actions">
+          <button class="cookie__accept">Принять</button>
+        </div>
+      </div>
+    </section>
+    <script defer src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script defer src="./script.js"></script>
+    <script defer src="./cookie.js"></script>
   </body>
 </html>

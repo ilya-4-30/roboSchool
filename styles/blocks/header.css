@@ -55,7 +55,7 @@
   gap: var(--second-gap);
   justify-content: center;
   align-items: flex-start;
-  background-image: url('../../images/header-background.png');
+  background-image: url('../../images/header-background.webp');
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: contain;

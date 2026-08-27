@@ -1,0 +1,33 @@
+.cookie {
+  padding: var(--second-gap);
+  position: fixed;
+  width: 80%;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-light);
+  color: var(--color-dark);
+  border-radius: var(--card-radius);
+  box-shadow: 0px 0px 5px 5px #f0eeee;
+  transition: var(--transition-time);
+  z-index: 9999;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translate(-50%, 100px);
+  pointer-events: none;
+}
+
+.cookie__content {
+  display: flex;
+  align-items: center;
+  gap: var(--second-gap);
+}
+
+.cookie__accept {
+  padding: 15px;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  border-radius: var(--button-radius);
+}
